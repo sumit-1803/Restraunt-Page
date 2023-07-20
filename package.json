@@ -1,4 +1,5 @@
 {
+  "homepage":"http://sumit-1803.github.io/Restraunt-Page",
   "name": "restraunt-page",
   "version": "1.0.0",
   "description": "odin project restraunt",
@@ -6,7 +7,7 @@
   "scripts": {
     "build": "webpack --mode=development",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
