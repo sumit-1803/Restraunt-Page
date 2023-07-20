@@ -1,5 +1,5 @@
 {
-  "homepage":"http://sumit-1803.github.io/Restraunt-Page/",
+  "homepage": "http://sumit-1803.github.io/Restraunt-Page/",
   "name": "restraunt-page",
   "version": "1.0.0",
   "description": "odin project restraunt",
@@ -18,10 +18,7 @@
   "bugs": {
     "url": "https://github.com/sumit-1803/Restraunt-Page/issues"
   },
-  "homepage": "https://github.com/sumit-1803/Restraunt-Page#readme",
   "devDependencies": {
-    "gh-pages": "^5.0.0",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "gh-pages": "^5.0.0"
   }
 }
