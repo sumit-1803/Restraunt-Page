@@ -35,25 +35,34 @@ const createTabs=()=>{
 
     div1.addEventListener("click",()=>{
         clearContent();
+        clearHead();
         createRestrauranthomePage();
     })
     div2.addEventListener("click",()=>{
         clearContent();
+        clearHead();
         createmenupage();
     })
     div3.addEventListener("click",()=>{
         clearContent();
+        clearHead();
         createcontactpage();
     })
 }
-const newdiv = document.querySelector('#newdiv');
+
 function clearContent(){
     const content = document.querySelector('#content');
     const pageContent = document.querySelector('.page-content');
     if(pageContent){
         content.removeChild(pageContent);
-    }
-    
+    }  
 }
+function clearHead(){
+    const newdiv = document.querySelector('#newDiv');
+    if(newdiv){
+        newdiv.remove();
+    }
+}
+
 
 export default createTabs;

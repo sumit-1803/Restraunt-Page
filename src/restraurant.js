@@ -3,28 +3,30 @@ const createRestrauranthomePage = () => {
     const pageContent = document.createElement('div');
     pageContent.classList.add('page-content');
     
-    // const navbar = document.querySelector('#navbar');
+    const navbar = document.querySelector('#navbar');
     // creating new div and appending adjacenly
-    // const newdiv = document.createElement('div');
-    // navbar.insertAdjacentElement('beforebegin',newdiv);
+    const newdiv = document.createElement('div');
+    newdiv.setAttribute('id', 'newDiv');
+    navbar.insertAdjacentElement('beforebegin',newdiv);
     
     
     // create and append headline element
     const headline = document.createElement('h1');
     headline.classList.add("head")
     headline.textContent="Welcome to Restraurant-Website";
-    pageContent.appendChild(headline);
+    newdiv.appendChild(headline);
     
     // create and append image element
     const image = document.createElement('img');
     image.src= "/images/restraurant.jpg";
-    image.style.width='200px';
+    image.style.width='500px';
+    image.style.height='590px';
     pageContent.appendChild(image);
 
 
     // create and append copy element 
     const copy = document.createElement('p');
-    copy.textContent="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque provident hic accusantium ut perspiciatis magnam voluptatibus quia, natus harum quibusdam excepturi facere ducimus, molestiae blanditiis tempore ipsa laborum voluptates nostrum similique minus distinctio voluptatem possimus?";
+    copy.textContent="Welcome to our Restaurant-Website! Discover mouthwatering dishes prepared with love and passion. Our menu offers a delightful range of Pomodoro, Bolognesa, and Alfredo, sure to tantalize your taste buds. Indulge in a culinary journey where exceptional flavors meet a cozy ambiance. Come, dine, and create cherished memories with us!";
     pageContent.appendChild(copy);
     content.appendChild(pageContent);
 }

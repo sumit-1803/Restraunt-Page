@@ -1,6 +1,13 @@
 // module for creating menu Page
 
 const createmenupage = () =>{
+
+    // creating new div 
+    const menuInnerDiv = document.createElement('div');
+    menuInnerDiv.classList.add('menuInnerDiv');
+
+
+
     const content = document.querySelector('#content');
     const pageContent = document.createElement('div');
     pageContent.classList.add('page-content');
@@ -24,9 +31,16 @@ const createmenupage = () =>{
     menulist.appendChild(menuItem2);
     menulist.appendChild(menuItem3);
 
-    pageContent.appendChild(heading);
-    pageContent.appendChild(menulist);
+    menuInnerDiv.appendChild(heading);
+    menuInnerDiv.appendChild(menulist);
+    pageContent.appendChild(menuInnerDiv);
     content.appendChild(pageContent);
+
+    
 }
 
 export default createmenupage;
+
+
+
+

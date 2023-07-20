@@ -4,7 +4,9 @@
   "description": "odin project restraunt",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/sumit-1803/Restraunt-Page#readme",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   }
